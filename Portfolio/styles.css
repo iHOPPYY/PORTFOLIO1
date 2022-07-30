@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration:none;
+}
+
+.Navigbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+    
+}
+
+.Navigbar .logo a{
+    color:aliceblue;
+    font-size:35px;
+    font-weight: 600;
+}
+
+.Navigbar .logo a span{
+    color: tomato;
+}
+
+.Navigbar .Menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.Navigbar .Menu li a{
+    display: block;
+    color:#ffff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: color 0.3s ease;
+}
+
+.Navigbar .Menu li a:hover{
+    color: tomato; 
+
+}
+
+   
+
+.Navigbar .barwidth{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    padding: 0 30px;
+    margin: auto;
+}
+
+
+.home{
+    display:flex;
+    background: url("Pics/photo-1555949963-ff9fe0c870eb.avif") no-repeat center;
+    height: 100vh;
+    color:#ffff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .barwidth{
+    width: 100%;
+    display: flex;
+}
+
+.home .hometext .t1{
+    font-size: 27px;
+    position: relative; top: 250px; left: 75px;
+}
+.home .hometext .t2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+    position: relative; top: 250px; left: 75px;
+}
+.home .hometext .t3{
+    font-size: 40px;
+    margin: 5px 0;
+    position: relative; top: 250px; left: 75px;
+}
+
+.home .hometext .t3 span{
+    font-weight: 600px;
+    color:tomato;
+}
+
+section{
+    padding: 100px 0px;
+}
+
+.abouttext{
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .tittle{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+.about .tittle::before{
+    content: ""; 
+    position: absolute;
+    bottom: -180px;
+    left: 50%;
+    width: 180%;
+    height: 3px;
+    background:black;
+    transform: translateX(-50%);
+}
+
+.about .tittle::after{
+    content: " I am..."; 
+    position: absolute;
+    top: 750px;
+    font-size: 20px;
+    color: tomato;
+    padding:5px;
+    left: 50%;
+    background:#ffff;
+    transform: translateX(-50%);
+}
+
+.about .abouttext{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .abouttext .leftcol{
+    width: 45%;
+}
+
+.about .abouttext .leftcol img{
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+    position: relative; left: 100px
+}
+
+.about .abouttext .rightcol{
+    width: 30%;
+    position: relative; right: 200px
+}
+
+.about .abouttext .rightcol .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .abouttext .rightcol .text span{
+    color: tomato;
+}
+
+.hobbies{
+    background: black;
+    color:#ffff;
+}
+
+.hobbies .tittle{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    color: #ffff;
+}
+
+.hobbies .tittle::before{
+    content: ""; 
+    position: absolute;
+    bottom: -885px;
+    left: 50%;
+    width: 180%;
+    height: 3px;
+    transform: translateX(-50%);
+    color: #ffff;
+}
+
+.hobbies .tittle::after{
+    content: "I like..."; 
+    position: absolute;
+    bottom: -900px;
+    font-size: 20px;
+    color: tomato;
+    padding:5px;
+    left: 50%;
+    background:#ffff;
+    transform: translateX(-50%);
+}
+
+.hobbies .hobbiestext{
+    color: #ffff;
+}
+
+.hobbies .hobbiestext .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hobbies .hobbiestext .card:hover{
+    background:tomato;
+}
+.hobbies .hobbiestext .card .box{
+    transition: all 0.3s ease;
+}
+.hobbies .hobbiestext .card:hover .box{
+    transform: scale(1.05);
+}
+.hobbies .hobbiestext .card img{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.hobbies .hobbiestext .card:hover img{
+    color: #fff;
+}
+.hobbies .hobbiestext .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+
+.box img{
+    width: 35%;
+}
+
+.contact .tittle{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    color:black;
+}
+
+.contact .tittle::before{
+    content: ""; 
+    position: absolute;
+    bottom: -600;
+    left: 50%;
+    width: 180%;
+    height: 3px;
+    background:black;
+    transform: translateX(-50%);
+}
+
+.contact .tittle::after{
+    content: "Contacts"; 
+    position: absolute;
+    top: 2770px;
+    font-size: 20px;
+    color: tomato;
+    padding:5px;
+    left: 50%;
+    background:#ffff;
+    transform: translateX(-50%);
+}
+
+.about .about .hobbies{
+    font-family: 'ubuntu', sans-serif;
+}
